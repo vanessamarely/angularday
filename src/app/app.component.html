@@ -1,21 +1,450 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!--==========================
+  Header
+============================-->
+<header id="header">
+  <div class="container">
+
+    <div id="logo" class="pull-left">
+      <!-- Uncomment below if you prefer to use a text logo -->
+      <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+      <a href="#intro" class="scrollto"><img src="../assets/img/logo.png" alt="" title=""></a>
+    </div>
+
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        <li class="menu-active"><a href="#intro">Home</a></li>
+        <li><a href="#about">Sobre el Evento</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#schedule">Agenda</a></li>
+        <li><a href="#venue">Lugar</a></li>
+        <li><a href="#supporters">Patrocinadores</a></li>
+        <li class="buy-tickets"><a href="#buy-tickets">Registro</a></li>
+      </ul>
+    </nav><!-- #nav-menu-container -->
+  </div>
+</header><!-- #header -->
+
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <h1 class="mb-4 pb-0"><span>Angular</span> Day Medellín</h1>
+      <p class="mb-4 pb-0">27 de Julio, RutaN</p>
+      <a href="#about" class="about-btn scrollto">Sobre el Evento</a>
+    </div>
+  </section>
+
+  
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Angular Day</h2>
+            <p> El Angular Day, es un evento dedicado a compartir con la comunidad de Medellín los diferentes conceptos de este Framework, sus mejores prácticas y metodologías, por parte de Speakers de talla local, nacional e internacional. </p>
+          </div>
+          <div class="col-lg-3">
+            <h3>¿Donde?</h3>
+            <p>RutaN, Cl. Barranquilla #52-20, Medellín, Antioquia </p>
+          </div>
+          <div class="col-lg-3">
+            <h3>¿Cuando?</h3>
+            <p>Sábado<br>27 de Julio</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      Speakers Section
+    ============================-->
+    <section id="speakers" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Speakers</h2>
+          <p>Aquí encuentras nuestros grandes Speakers</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="../assets/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a>Jorge Cano</a></h3>
+                <p>Google Developer Expert en Angular y tecnologías Web.
+                  Nativescript Developer Expert.</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="../assets/img/speakers/2.jpg" alt="Speaker 2" class="img-fluid">
+              <div class="details">
+                <h3><a>Israel Guzman</a></h3>
+                <p>Cofundador y COO de HeroDevs. Es anfitrión de Angulareando.</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="../assets/img/speakers/3.jpg" alt="Speaker 3" class="img-fluid">
+              <div class="details">
+                <h3><a>Michael Prentice</a></h3>
+                <p>Michael Prentice es consultor en Angular, Material Design, Firebase, Google Cloud, Software Architecture y Agile en DevIntent. Es parte del equipo de Angular y es el líder de AngularJS Material. </p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="../assets/img/speakers/4.jpg" alt="Speaker 4" class="img-fluid">
+              <div class="details">
+                <h3><a>Luis Aviles</a></h3>
+                <p>Google Developer Expert en Tecnologías Web y Angular.  Ingeniero de software en HeroDevs.</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="../assets/img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
+              <div class="details">
+                <h3><a>Sebastian Gomez</a></h3>
+                <p>Ingeniero de sistemas e Informática y Magister en Ingeniería de Sistemas. Organizador del GDG Medellín y Google Developer Expert en Web technologies.</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="../assets/img/speakers/6.jpg" alt="Speaker 6" class="img-fluid">
+              <div class="details">
+                <h3><a>Claudia Dávila</a></h3>
+                <p>Frontend Developer en Endava</p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="speaker">
+                <img src="../assets/img/speakers/7.jpg" alt="Speaker 7" class="img-fluid">
+                <div class="details">
+                  <h3><a>Margarita Hoyos</a></h3>
+                  <p>Full stack developer & FrontEnd Tech Lead en PSL.</p>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="speaker">
+                  <img src="../assets/img/speakers/8.jpg" alt="Speaker 8" class="img-fluid">
+                  <div class="details">
+                    <h3><a>Jeffry Lenis</a></h3>
+                    <p>Full-Stack developer at @Endava, JS lover, Angular enthusiast.</p>
+                    <div class="social">
+                      <a href=""><i class="fa fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+      Schedule Section
+    ============================-->
+    <section id="schedule" class="section-with-bg">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Agenda</h2>
+          <p>Revisa nuestra agenda para que no pierdas ningún detalle del evento</p>
+        </div>
+
+        <div class="tab-content row justify-content-center">
+
+          <!-- Schdule Day 1 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>08:30 AM</time></div>
+              <div class="col-md-10">
+                <h4>Ingreso</h4>
+                <p>Ingreso al evento.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>09:00 AM</time></div>
+              <div class="col-md-10">
+                <h4>Presentación del Evento</h4>
+                <p>Presentación del evento y presentación de patrocinadores</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>9:35 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="../assets/img/speakers/7.jpg" alt="Margarita Hoyos">
+                </div>
+                <h4>Angular desde lo básico <span>Margarita Hoyos</span></h4>
+                <p>Hablaremos acerca de cómo Angular nos permite ampliar el comportamiento de nuestro navegador a través de la creación de etiquetas y atributos HTML personalizados y agregándoles su propia funcionalidad.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="../assets/img/speakers/8.jpg" alt="Jeffry Lenis">
+                </div>
+                <h4>@Ngrx/Data <span>Jeffry Lenis</span></h4>
+                <p>En que consiste y como implementar @Ngrx/data en tu App en Angular</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+                <div class="col-md-2"><time>10:25 AM</time></div>
+                <div class="col-md-10">
+                  <h4>Break</h4>
+                  <p>Tiempo para disfrutar de un delicioso refrigerio</p>
+                </div>
+              </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="../assets/img/speakers/4.jpg" alt="Luis Aviles">
+                </div>
+                <h4>Differential Loading in Angular <span>Luis Aviles</span></h4>
+                <p>Differential Loading hace referencia al proceso mediante el cual el navegador elige cargar entre JavaScript moderno o antiguo en función de sus propias capacidades. Con la nueva versión de Angular se puede aprovechar esta característica de forma predeterminada, al completar una compilación para JavaScript ES6/ES5 de tu aplicación.
+                    Al momento de cargar tu app, los usuarios obtienen automáticamente la versión de JavaScript que necesitan, permitiendo que el proceso de carga sea aún más rápido en navegadores modernos.
+                    </p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:25 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="../assets/img/speakers/2.jpg" alt="Jack Christiansen">
+                </div>
+                <h4>Desarrollo de Aplicaciones Angular Empresariales.<span>Israel Guzman</span></h4>
+                <p>Las aplicaciones empresariales no son triviales, son muy desafiantes, difíciles de escalar, mantener y sobre todo... De desarrollar. Aprende cómo desarrollar aplicaciones empresariales modernas en Angular que sean escalables, mantenibles y divertidas de desarrollar.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:10 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="../assets/img/speakers/6.jpg" alt="Claudia Davila">
+                </div>
+                <h4>Angular Elements <span>Claudia Dávila</span></h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:00 PM</time></div>
+              <div class="col-md-10">
+                <h4>Apertura del evento</h4>
+                <p>Apertura del evento en la jornada de la tarde</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:15 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="../assets/img/speakers/5.jpg" alt="Sebastian Gomez">
+                </div>
+                <h4>Implementing Real-time Tracking with google maps + firebase + angular. <span>Sebastian Gomez</span></h4>
+                <p>En esta charla aprenderemos como crear una aplicación para hacer tracking en tiempo real de la ruta en un mapa (Uber like) aprenderemos como conectar angular y firebase, como implementar google maps en angular y finalmente como visualizar luna posición que cambia a lo largo de una ruta ddesde nuestra aplicación.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:40 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="../assets/img/speakers/1.jpg" alt="Jorge Cano">
+                </div>
+                <h4>Buenos Dias Mr Reactive!  <span>Jorge Cano</span></h4>
+                <p>Cuando tengas que programar con angular, hazlo de forma reactiva.... entendio señor reactive?</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>03:15 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="../assets/img/speakers/3.jpg" alt="Michael Prentice">
+                </div>
+                <h4>Verificando la accesibilidad de tu aplicación <span>Michael Prentice</span></h4>
+                <p>Introduciré rápidamente una serie de herramientas y sistemas necesarios para probar la accesibilidad de una aplicación Angular. Luego les mostraré algunos de ellos como Chrome Dev Tools, Lighthouse Accessiblity Audits y los lectores de pantalla: VoiceOver y ChromeVox</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>03:40 PM</time></div>
+              <div class="col-md-10">
+                <h4>Cierre del evento & Swags</h4>
+                <p>Cierre, agradecimientos del evento & Swags!!</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule Day 1 -->
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--==========================
+      Venue Section
+    ============================-->
+    <section id="venue" class="wow fadeInUp">
+
+      <div class="container-fluid">
+
+        <div class="section-header">
+          <h2>Lugar</h2>
+          <p>Este evento se realizará en RutaN</p>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-lg-6 venue-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15863.972762830268!2d-75.5666072!3d6.2646247!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x99f177323f8c67d5!2sRuta+N!5e0!3m2!1ses!2sco!4v1562032390061!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-lg-6 venue-info">
+            <div class="row justify-content-center">
+              <div class="col-11 col-lg-8">
+                <h3>RutaN, Centro de innovación y negocios de Medellín</h3>
+                <p>El centro de innovación y negocios de Medellín; tiene el propósito de contribuir al mejoramiento de la calidad de vida de los habitantes de la ciudad a través de la Ciencia, la Tecnología y la innovación.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--==========================
+      Sponsors Section
+    ============================-->
+    <section id="supporters" class="section-with-bg wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Patrocinadores</h2>
+        </div>
+
+        <div class="row no-gutters supporters-wrap clearfix">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="../assets/img/supporters/1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="../assets/img/supporters/2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="../assets/img/supporters/3.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+         
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--==========================
+      Buy Ticket Section
+    ============================-->
+    <section id="buy-tickets" class="section-with-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Registro</h2>
+          <p>Te invitamos a que te registres usando el link a continuación:</p>
+        </div>
+
+        <div class="row register">
+          <div class="col-lg-4 register-card">
+            <div class="card mb-6 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Entrada</h5>
+                <h6 class="card-price text-center">Gratis</h6>
+                <hr>
+                <div class="text-center">
+                  <a href="https://www.eventbrite.com/e/angular-day-tickets-62401003080">Registro</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-12 col-md-6 footer-info">
+            <img src="../assets/img/logo.png" alt="Angular Day Medellin">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
 <router-outlet></router-outlet>
